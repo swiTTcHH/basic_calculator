@@ -1,0 +1,85 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(grey, black);
+}
+
+.container {
+  width: 20%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(7, 54, 69, 0.5);
+  padding: 25px;
+  box-shadow: 0 0 10px black, 5px 3px 0 rgba(128, 128, 128, 0.454);
+}
+
+.input {
+  background-color: rgba(53, 164, 138, 0.341);
+  padding: 10px;
+  color: rgba(25, 185, 147, 0.922);
+  margin-bottom: 5px;
+  text-align: right;
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.nums {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  margin: 0 auto;
+  padding: 30px 10px;
+}
+
+button {
+  padding: 10px;
+  background-color: #2a5462;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 2px 0 3px black, inset 2px 0 2px rgba(230, 230, 230, 0.511);
+}
+
+button:active {
+  box-shadow: 0px 0 1px black, inset 0px 0 1px rgba(230, 230, 230, 0.557);
+}
+
+.equal {
+  grid-row: span 2;
+}
+
+.zero {
+  grid-column: span 3;
+}
+
+.clear {
+  background-color: red;
+}
+
+.sign {
+  text-align: right;
+  color: rgb(203, 203, 203);
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 250px) and (max-width: 768px) {
+  .container {
+    width: 60%;
+  }
+}

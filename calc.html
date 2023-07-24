@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+    <link rel="stylesheet" href="calc.css">
+    <link rel="stylesheet" href="/page with side menu/index.css">
+</head>
+
+<body>
+    <nav>
+        <div class="branding">
+          <a href="/page with side menu/index.html">WELCOME TO THE CLUB</a>
+        </div>
+        <div class="toggle">=</div>
+        <div class="largemenu">
+          <div class="close">X</div>
+          <ul class="nav">
+            <li>
+              <a href="/js_events.html" class="home desktop">Home</a>
+            </li>
+            <li>
+<a href="/trying to make a calculator/calc.html" class="about desktop">Calc</a>
+            </li>
+            <li>
+              <a href="#" class="Services desktop">Services</a>
+            </li>
+            <li>
+              <a href="#" class="location desktop">Location</a>
+            </li>
+            <li>
+              <a href="#" class="contact desktop">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container">
+        <div class="input">0</div>
+        <div class="nums">
+            <button class="clear buttons">C</button>
+            <button class="over operands">/</button>
+            <button class="times operands">*</button>
+            <button class="plus operands">+</button>
+            <button class="9 buttons">9</button>
+            <button class="8 buttons">8</button>
+            <button class="7 buttons">7</button>
+            <button class="minus operands">-</button>
+            <button class="6 buttons">6</button>
+            <button class="5 buttons">5</button>
+            <button class="4 buttons">4</button>
+            <button class="point operands">.</button>
+            <button class="3 buttons">3</button>
+            <button class="2 buttons">2</button>
+            <button class="1 buttons">1</button>
+            <button class="equal operands">=</button>
+            <button class="zero buttons">0</button>
+        </div>
+        
+        <div class="sign">
+            <h3>Calculator made by <span>swiTcH</span></h3>
+        </div>
+
+        <script src="calc.js"></script>
+
+            <!-- nav behaviour -->
+    <script>
+        const openBtn = document.querySelector(".toggle");
+        const elem = document.querySelector(".largemenu");
+        openBtn.addEventListener("mousedown", (e) => {
+          elem.classList.add("active");
+        });
+  
+        const closeBtn = document.querySelector(".close");
+        closeBtn.addEventListener("mousedown", (e) => {
+          elem.classList.remove("active");
+        });
+      </script>
+      <!-- nav behaviour end -->
+    </div>
+</body>
+
+</html>
