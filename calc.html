@@ -7,37 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calc</title>
     <link rel="stylesheet" href="calc.css">
-    <link rel="stylesheet" href="/page with side menu/index.css">
 </head>
 
 <body>
-    <nav>
-        <div class="branding">
-          <a href="/page with side menu/index.html">WELCOME TO THE CLUB</a>
-        </div>
-        <div class="toggle">=</div>
-        <div class="largemenu">
-          <div class="close">X</div>
-          <ul class="nav">
-            <li>
-              <a href="/js_events.html" class="home desktop">Home</a>
-            </li>
-            <li>
-<a href="/trying to make a calculator/calc.html" class="about desktop">Calc</a>
-            </li>
-            <li>
-              <a href="#" class="Services desktop">Services</a>
-            </li>
-            <li>
-              <a href="#" class="location desktop">Location</a>
-            </li>
-            <li>
-              <a href="#" class="contact desktop">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
     <div class="container">
         <div class="input">0</div>
         <div class="nums">
@@ -66,20 +38,6 @@
 
         <script src="calc.js"></script>
 
-            <!-- nav behaviour -->
-    <script>
-        const openBtn = document.querySelector(".toggle");
-        const elem = document.querySelector(".largemenu");
-        openBtn.addEventListener("mousedown", (e) => {
-          elem.classList.add("active");
-        });
-  
-        const closeBtn = document.querySelector(".close");
-        closeBtn.addEventListener("mousedown", (e) => {
-          elem.classList.remove("active");
-        });
-      </script>
-      <!-- nav behaviour end -->
     </div>
 </body>
 
