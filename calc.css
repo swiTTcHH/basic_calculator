@@ -23,6 +23,7 @@ body {
   transform: translate(-50%, -50%);
   background-color: rgba(7, 54, 69, 0.5);
   padding: 25px;
+  border-radius: 5px;
   box-shadow: 0 0 10px black, 5px 3px 0 rgba(128, 128, 128, 0.454);
 }
 
