@@ -11,6 +11,10 @@ body {
   background: radial-gradient(grey, black);
 }
 
+.attrib a{
+  color: white;
+}
+
 .container {
   width: 20%;
   position: fixed;
